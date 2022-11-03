@@ -1,0 +1,50 @@
+* {
+  background-color: rgb(63, 63, 63);
+}
+
+.button-base {
+  width: 100px;
+  height: 32px;
+  background: radial-gradient(circle, rgba(98, 98, 98, 0.5) 0%, rgba(79, 79, 79, 0.5) 50%, rgba(98, 98, 98, 0.5) 100%), linear-gradient(0deg, rgb(98, 98, 98) 0%, rgb(139, 139, 139) 35%, rgb(173, 173, 173) 50%, rgb(139, 139, 139) 65%, rgb(98, 98, 98) 100%);
+  margin: 10px;
+  text-align: center;
+  border-radius: 32px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  color: lightblue;
+  cursor: pointer;
+}
+
+.label {
+  margin-top: 40px;
+  margin-left: 70px;
+  font-size: 17pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(13, 206, 87);
+}
+
+.button-base:hover {
+  background: linear-gradient(0deg, rgb(133, 136, 104) 0%, rgb(110, 153, 108) 35%, rgb(110, 172, 126) 50%, rgb(110, 153, 108) 65%, rgb(133, 136, 104) 100%);
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.choice-container {
+  display: flex;
+}
+
+.choice-result {
+  width: 120px;
+  height: 120px;
+  margin: 0 0 0 150px;
+  display: block;
+}
+
+.results-container {
+  display: inline;
+  width: 300px;
+}
+
+#current-results-label {
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */

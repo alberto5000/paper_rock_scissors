@@ -194,7 +194,6 @@ class Game_System
     }
     get_game_results()
     {
-        //<br>Wins: 0</br>Ties: 0<br>Total rounds played: 0</br>
         return `Wins: ${this.#m_first_player.wins} <br>Losses: ${this.#m_first_player.loss}</br> Ties: ${this.#m_first_player.ties} <br>Total rounds played: ${this.#m_rounds_played}<br/>`;
     }
 
@@ -226,6 +225,7 @@ document.getElementById('paper').addEventListener("click", fc =>
 {
     client_player.decision(Game_Choice.paper);
     document.getElementById('player-choice').outerHTML = '<img class="choice-result" id="player-choice" src="Images/paper.png" alt="Paper">';
+    console.log('paper button clicked');  
 })
 
 //--rock button
@@ -233,6 +233,7 @@ document.getElementById('rock').addEventListener("click", fc =>
 {
     client_player.decision(Game_Choice.rock);
     document.getElementById('player-choice').outerHTML = '<img class="choice-result" id="player-choice" src="Images/rock.png" alt="Rock">';
+    console.log('rock button clicked');  
 })
 
 //--scissors button
@@ -240,6 +241,7 @@ document.getElementById('scissors').addEventListener("click", fc =>
 {
     client_player.decision(Game_Choice.scissors);
     document.getElementById('player-choice').outerHTML = '<img class="choice-result" id="player-choice" src="Images/scissors.png" alt="Scissors">';
+    console.log('scissors button clicked');  
 })
 
 //--check-choice-button
@@ -267,7 +269,8 @@ document.getElementById('check-choice-button').addEventListener("click", fc =>
             break;
     }
     document.getElementById('results-label').innerHTML = gsys.get_game_results();
-    document.getElementById('current-results-label').innerHTML = client_player.last_result();   
+    document.getElementById('current-results-label').innerHTML = client_player.last_result(); 
+    console.log('check-choice-button clicked');  
 })
 
 //--reset-results-button
@@ -278,6 +281,7 @@ document.getElementById('reset-results-button').addEventListener("click", fc =>
     document.getElementById('current-results-label').innerHTML = client_player.last_result();  
     document.getElementById('enemy-choice').outerHTML = '<img class="choice-result" id="enemy-choice" src="Images/unknown.png" alt="Unknown">'; 
     document.getElementById('player-choice').outerHTML = '<img class="choice-result" id="player-choice" src="Images/unknown.png" alt="Unknown">';
+    console.log('reset-results-button clicked');
 })
 
 //****************************************************************************************/

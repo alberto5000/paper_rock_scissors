@@ -15,6 +15,13 @@
     font-weight: 200;
     color: lightblue;
     cursor: pointer;
+
+    &.button-base:hover
+    {
+      background: linear-gradient(0deg, rgb(133, 136, 104) 0%, rgb(110, 153, 108) 35%, rgb(110, 172, 126) 50%, rgb(110, 153, 108) 65%, rgb(133, 136, 104) 100%);
+      font-weight: 700;  
+      font-size: 10pt;
+    }
   }
   
   .label
@@ -25,14 +32,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(13, 206, 87);
   }
-  
-  .button-base:hover
-  {
-    background: linear-gradient(0deg, rgb(133, 136, 104) 0%, rgb(110, 153, 108) 35%, rgb(110, 172, 126) 50%, rgb(110, 153, 108) 65%, rgb(133, 136, 104) 100%);
-    font-weight: 700;  
-    font-size: 10pt;
-  }
-  
+    
   .choice-container {
     display: flex;
   }
